@@ -1,0 +1,206 @@
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* header */
+  nav li a i {
+    font-size: 20px;
+  }
+  nav li a img {
+    width: 15px;
+  }
+  nav li:nth-of-type(n+2):nth-of-type(-n+12) {
+    display: none;
+  }
+
+  /* Trigger Button */
+   label[for=trigger] {
+    display: block;
+  }
+
+  /* welcome section */
+  section.welcome .more_view span {
+    font-size: 15px;
+  }
+  section.welcome .more_view span i {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+  /* feature */
+  .feature h1 {
+    font-size: 45px;
+  }
+  .feature p {
+    font-size: 18px;
+  }
+
+  /* view_pay */
+  .view_pay {
+    width: 200px;
+  }
+  .view_pay span a, .view_pay span i {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(26, 109, 193);
+  }
+
+  /* Apple_promotion section */
+  .MacBook_Air, .MacBook_Pro_13, .Watch, .iPad_air {
+    background-size: 870px;
+  }
+
+  /* sec_feature */
+  .sec_feature .Apple_TV_desc p {
+    font-size: 15px;
+  }
+
+  /* footer */
+  footer {
+    padding: 0 20px;
+  }
+
+  /* sitemap */
+  .sitemap .menu-items {
+    display: block;
+    width: 100%;
+  }
+  .menu-item-title {
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    pointer-events: all;
+  }
+  .menu-item:last-child .menu-item-title {
+    border-bottom: none;
+  }
+  .menu-item-title:after {
+    content: '\e942';
+    font-family: xeicon;
+    position: absolute;
+    right: 10px;
+    transition: 0.35s;
+  }
+  .menu-item-title.active:after {
+    transform: rotate(180deg);
+  }
+  .menu-item-content {
+    display: none;
+  }
+
+  /* copyright */
+  .copyrights span:first-of-type {
+    float: none;
+  }
+  .copyrights span:last-of-type {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* policy */
+  .policy {
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .policy li:first-child {
+    padding-left: 0;
+  }
+  .policy li:last-child {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 715px) {
+  /* welcome section */
+  section.welcome .more_view span {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* sec_feature */
+  .sec_feature .Apple_TV_desc {
+    width: 180px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* welcome section */
+  section.welcome img {
+    width: 100%;
+  }
+
+  /* Apple_promotion section */
+  section.Apple_promotion {
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 425px) {
+  /* header */
+  header {
+    max-width: 425px;
+  }
+
+  /* policy */
+  .policy li:last-child {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  /* benefit */
+  .benefit p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* benefit */
+  .benefit p {
+    font-size: 10px;
+  }
+
+  /* welcome section */
+  section.welcome h2 {
+    font-size: 20px;
+  }
+  section.welcome .more_view span {
+    width: 200px;
+  }
+
+  /* feature */
+  .feature h1 {
+    font-size: 40px;
+  }
+
+  /* policy */
+  .policy li:nth-child(4) {
+    padding-left: 0;
+  }
+  .policy li:last-child {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* benefit */
+  .benefit {
+    display: none;
+  }
+
+  /* MacBook_Pro_13 */
+  .MacBook_Pro_13 h1 {
+    font-size: 35px;
+  }
+
+  /* policy */
+  .policy li:nth-child(3) {
+    padding-left: 0;
+  }
+  .policy li:nth-child(4) {
+    padding-left: 10px;
+  }
+}
