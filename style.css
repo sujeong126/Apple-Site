@@ -391,11 +391,13 @@ footer {
 .menu-item:nth-child(8) {
   grid-area: item8;
 }
+input[id*="menu-item"] {
+  display: none;
+}
 .menu-item-title {
   padding: 5px 0;
   color: rgb(35, 35, 35);
   font-weight: 600;
-  pointer-events: none; /* 미디어쿼리 사용시 어코디언 메뉴에 함수를 사용했기 때문에 웹에서는 함수 실행X 하려고 */
 }
 .menu-item-content a {
   color: #676767;
