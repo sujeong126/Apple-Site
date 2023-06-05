@@ -72,26 +72,12 @@ label[for=trigger] span {
   background-color: rgba(222, 222, 222, 0.84);
   width: 100%;
   left: 0;
-  transition: 0.3s;
 }
 label[for=trigger] span:nth-child(1) {
   top: 0;
 }
 label[for=trigger] span:nth-child(2) {
   top: 50%;
-}
-input[id=trigger]:checked + label[for=trigger] {
-  margin-top: 0;
-}
-input[id=trigger]:checked + label[for=trigger] span:nth-child(1) {
-  top: 50%;
-  transform: rotate(45deg);
-  background-color: #fff;
-}
-input[id=trigger]:checked + label[for=trigger] span:nth-child(2) {
-  top: 50%;
-  background-color: #fff;
-  transform: rotate(-45deg);
 }
 
 /* benefit */
