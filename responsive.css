@@ -1,11 +1,5 @@
-@media (max-width: 840px) {
+@media (max-width: 868px) {
   /* header */
-  nav li a i {
-    font-size: 20px;
-  }
-  nav li a img {
-    width: 15px;
-  }
   nav li:nth-of-type(n+2):nth-of-type(-n+12) {
     display: none;
   }
@@ -20,16 +14,23 @@
     color: #fff;
     font-size: 17px;
   }
-} 
+}
+
+@media (max-width:845px) {
+  /* welcome section */
+  section.welcome .more_view {
+    width: 100%;
+  }
+  section.welcome .more_view span {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
 @media (max-width: 830px) {
   /* welcome section */
   section.welcome .more_view span {
     font-size: 16px;
-  }
-  section.welcome .more_view span i {
-    font-size: 22px;
-    vertical-align: middle;
   }
 }
 
@@ -42,10 +43,6 @@
   /* welcome section */
   section.welcome .more_view span {
     font-size: 15px;
-  }
-  section.welcome .more_view span i {
-    font-size: 20px;
-    vertical-align: middle;
   }
 
   /* feature */
@@ -95,17 +92,17 @@
     cursor: pointer;
   }
   input[id*="menu-item"] + label:after {
-    content: '\e942';
-    font-family: xeicon;
+    content: url(images/chevron-down-icon.svg);
     position: absolute;
     right: 10px;
+    bottom: 5px;
   }
   input[id*="menu-item"] + label.active:after {
     transform: rotate(180deg);
   }
   .menu-item-content {
     max-height: 0;
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
     overflow: hidden;
   }
   input[id*="menu-item"]:checked + label + .menu-item-content {
@@ -136,21 +133,21 @@
 }
 
 @media (max-width: 715px) {
-  /* welcome section */
-  section.welcome .more_view span {
-    display: block;
-    margin: 10px 0;
-  }
-
   /* sec_feature */
   .sec_feature .Apple_TV_desc {
     width: 180px;
   }
 }
 
+@media (max-width: 670px) {
+  section.welcome h2 + img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 650px) {
   /* welcome section */
-  section.welcome img {
+  section.welcome h2 + img {
     width: 100%;
   }
 
@@ -188,9 +185,6 @@
   /* welcome section */
   section.welcome h2 {
     font-size: 20px;
-  }
-  section.welcome .more_view span {
-    width: 200px;
   }
 
   /* feature */
